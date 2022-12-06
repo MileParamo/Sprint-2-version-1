@@ -16,15 +16,7 @@ public class Brigadistas {
 	private String planta;
 	private String años_brigadista;
 
-	public Brigadistas(Long id, String nombre, String apellido, String direccion, String planta,
-			String años_brigadista) {
-		super();
-		this.id = id;
-		this.nombre = nombre;
-		this.apellido = apellido;
-		this.direccion = direccion;
-		this.planta = planta;
-		this.años_brigadista = años_brigadista;
+	public Brigadistas() {
 	}
 
 	public Long getId() {

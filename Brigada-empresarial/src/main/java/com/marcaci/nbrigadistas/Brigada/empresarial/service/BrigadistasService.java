@@ -6,15 +6,11 @@ import java.util.Optional;
 import com.marcaci.nbrigadistas.Brigada.empresarial.model.Brigadistas;
 
 public interface BrigadistasService {
+	
 	public Brigadistas actualizarBrigadistas(Brigadistas brigadistas);
-
-	public Brigadistas crearBrigadisas(Brigadistas brigadistas);
-
+	public Brigadistas crearBrigadistas(Brigadistas brigadistas);
 	public void eliminarBrigadistasPorID(Long id);
-
 	public Optional<Brigadistas> consultarBrigadistas(Long id, String descripcion);
-
-	public List<Brigadistas> consultarBrigadistasPorId(Long Id);
-
+	public Optional<Brigadistas> consultarBrigadistasPorId(Long Id);
 	public List<Brigadistas> consultarLista();
 }

@@ -19,8 +19,8 @@ public class MarcacionServiceImpl implements MarcacionService {
 		if (marcacion == null) {
 			return null;
 		}
-		Optional<Marcacion> marcacionAAtualizar = repositorio.findById(marcacion.getId());
-		if (marcacionAAtualizar.isPresent()) {
+		Optional<Marcacion> marcacionAActualizar = repositorio.findById(marcacion.getId());
+		if (marcacionAActualizar.isPresent()) {
 			return repositorio.save(marcacion);
 		}
 		return null;
@@ -28,14 +28,13 @@ public class MarcacionServiceImpl implements MarcacionService {
 
 	@Override
 	public Marcacion crearMarcacion(Marcacion marcacion) {
-		// TODO Auto-generated method stub
 		return null;
 	}
 
 	@Override
 	public void eliminarMarcacionPorID(Long id) {
 		Optional<Marcacion> eliminarMarcacion = repositorio.findById(id);
-		if (eliminarMarcacion .isPresent()) {
+		if (eliminarMarcacion.isPresent()) {
 			repositorio.delete(eliminarMarcacion .get());
 		}
 
@@ -52,7 +51,6 @@ public class MarcacionServiceImpl implements MarcacionService {
 
 	@Override
 	public List<Marcacion> consultarMarcacionPorId(Long Id) {
-		// TODO Auto-generated method stub
 		return null;
 	}
 
